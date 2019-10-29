@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_sketch"
+                android:layout_width="200dp"
+                android:layout_height="260dp"
+                android:background="@drawable/sketch"
+                android:scaleType="centerCrop"/>
+
+            <Button
+                android:id="@+id/btn_right_1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_right" />
+
+            <ImageView
+                android:id="@+id/iv_draft"
+                android:layout_width="200dp"
+                android:layout_height="260dp"
+                android:background="@drawable/draft"
+                android:scaleType="centerCrop" />
+
+            <Button
+                android:id="@+id/btn_right_2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_right" />
+
+            <ImageView
+                android:id="@+id/iv_result"
+                android:layout_width="200dp"
+                android:layout_height="260dp"
+                android:background="@drawable/result"
+                android:scaleType="centerCrop"
+                android:layout_marginRight="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <!--第一列按钮-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp">
+                <Button
+                    android:id="@+id/btn_update_sketch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上传线稿"
+                    android:textSize="12sp"
+                    android:maxLines="1"
+                    android:background="@drawable/bg_secondpage_button"
+                    android:drawableLeft="@drawable/upload_sketch"/>
+
+                <Button
+                    android:id="@+id/btn_update_reference"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上传参照"
+                    android:textSize="12sp"
+                    android:maxLines="1"
+                    android:background="@drawable/bg_secondpage_button"
+                    android:drawableLeft="@drawable/upload_reference"
+                    android:layout_marginTop="5dp"/>
+
+                <Button
+                    android:id="@+id/btn_clear_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="清除提示"
+                    android:textSize="12sp"
+                    android:maxLines="1"
+                    android:background="@drawable/bg_secondpage_button"
+                    android:drawableLeft="@drawable/clear"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+            <!--第一列按钮-->
+
+            <!--第二列按钮-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_eraser"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:text="色彩橡皮擦"
+                    android:textSize="15sp"
+                    android:background="@drawable/bg_secondpage_button"
+                    android:drawableStart="@drawable/eraser"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"/>
+                <Button
+                    android:id="@+id/btn_locator"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:text="颜色定位器"
+                    android:textSize="15sp"
+                    android:background="@drawable/bg_secondpage_button"
+                    android:drawableStart="@drawable/vector"
+                    android:drawablePadding="0dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"/>
+                <Button
+                    android:id="@+id/btn_tips"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:text="色彩提示点"
+                    android:textSize="15sp"
+                    android:background="@drawable/bg_secondpage_button"
+                    android:drawableLeft="@drawable/vector2"
+                    android:drawablePadding="0dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <!--第二列按钮-->
+
+            <!--第三列按钮-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp">
+                <CheckBox
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="线稿上色"/>
+                <CheckBox
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="颜色渲染"/>
+                <CheckBox
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="颜色重画"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
