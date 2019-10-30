@@ -96,65 +96,77 @@
             <!--第一列按钮-->
 
             <!--第二列按钮-->
-            <LinearLayout
+            <RadioGroup
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
                 android:orientation="horizontal">
-                <Button
-                    android:id="@+id/btn_eraser"
+                <RadioButton
+                    android:id="@+id/rb_eraser"
                     android:layout_width="60dp"
                     android:layout_height="match_parent"
                     android:text="色彩橡皮擦"
                     android:textSize="15sp"
-                    android:background="@drawable/bg_secondpage_button"
-                    android:drawableStart="@drawable/eraser"
-                    android:drawablePadding="10dp"
+                    android:button="@drawable/eraser"
+                    android:background="@drawable/bg_secondpage_radiobutton"
                     android:gravity="center"/>
-                <Button
-                    android:id="@+id/btn_locator"
+                <RadioButton
+                    android:id="@+id/rb_locator"
                     android:layout_width="60dp"
                     android:layout_height="match_parent"
                     android:text="颜色定位器"
                     android:textSize="15sp"
-                    android:background="@drawable/bg_secondpage_button"
-                    android:drawableStart="@drawable/vector"
-                    android:drawablePadding="0dp"
+                    android:button="@drawable/vector"
                     android:layout_marginLeft="5dp"
+                    android:background="@drawable/bg_secondpage_radiobutton"
                     android:gravity="center"/>
-                <Button
-                    android:id="@+id/btn_tips"
+                <RadioButton
+                    android:id="@+id/rb_tips"
                     android:layout_width="60dp"
                     android:layout_height="match_parent"
                     android:text="色彩提示点"
                     android:textSize="15sp"
-                    android:background="@drawable/bg_secondpage_button"
-                    android:drawableLeft="@drawable/vector2"
-                    android:drawablePadding="0dp"
+                    android:button="@drawable/vector2"
                     android:layout_marginLeft="5dp"
+                    android:background="@drawable/bg_secondpage_radiobutton"
                     android:gravity="center"/>
-            </LinearLayout>
+            </RadioGroup>
             <!--第二列按钮-->
 
             <!--第三列按钮-->
-            <LinearLayout
+            <RadioGroup
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:layout_marginLeft="10dp">
-                <CheckBox
+                android:layout_marginLeft="10dp"
+                android:gravity="center">
+                <RadioButton
                     android:layout_width="100dp"
                     android:layout_height="40dp"
-                    android:text="线稿上色"/>
-                <CheckBox
+                    android:text="线稿上色"
+                    android:textSize="15sp"
+                    android:textColor="#FF6633"/>
+                <RadioButton
                     android:layout_width="100dp"
                     android:layout_height="40dp"
-                    android:text="颜色渲染"/>
-                <CheckBox
+                    android:text="颜色渲染"
+                    android:textSize="15sp"
+                    android:textColor="#FF6633"/>
+                <RadioButton
                     android:layout_width="100dp"
                     android:layout_height="40dp"
-                    android:text="颜色重画"/>
-            </LinearLayout>
+                    android:text="颜色重画"
+                    android:textSize="15sp"
+                    android:textColor="#FF6633" />
+            </RadioGroup>
+            <!--第三列按钮-->
+
+            <Button
+                android:id="@+id/btn_change_color"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="change color"/>
+
         </LinearLayout>
 
     </LinearLayout>
